@@ -18,17 +18,9 @@ body {
 }
 
 @keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 #content {
@@ -50,7 +42,6 @@ body {
     color: white;
     padding: 30px 20px;
     text-align: center;
-    position: relative;
 }
 
 h1 {
@@ -67,32 +58,6 @@ h1 {
     opacity: 0.9;
     max-width: 600px;
     margin: 0 auto;
-}
-
-.stats {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    border-radius: 10px;
-    max-width: 500px;
-    margin: 20px auto 0;
-}
-
-.stat-item {
-    text-align: center;
-}
-
-.stat-value {
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
-.stat-label {
-    font-size: 0.9rem;
-    opacity: 0.8;
 }
 
 #api-data {
@@ -121,13 +86,8 @@ h1 {
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .loading-text {
@@ -289,25 +249,12 @@ h1 {
     background: #27ae60;
 }
 
-.btn-error {
-    background: #e74c3c;
-}
-
-.btn-error:hover {
-    background: #c0392b;
-}
-
 @media (max-width: 768px) {
     .user-list {
         grid-template-columns: 1fr;
     }
-
+    
     h1 {
         font-size: 2rem;
-    }
-
-    .stats {
-        flex-direction: column;
-        gap: 15px;
     }
 }
