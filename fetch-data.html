@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Display</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="fetch-data.css">
+</head>
+<body>
+    <div id="content">
+        <div class="header">
+            <h1><i class="fas fa-users"></i> User Directory</h1>
+            <p class="subtitle">Fetching and displaying user data from JSONPlaceholder API</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-value">10</div>
+                    <div class="stat-label">Total Users</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">Cities</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Companies</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="api-data">
+            <div class="loading">
+                <div class="spinner"></div>
+                <div class="loading-text">Loading user data...</div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn btn-refresh" id="refresh-btn">
+                <i class="fas fa-sync-alt"></i> Refresh Data
+            </button>
+            <button class="btn btn-error" id="error-btn">
+                <i class="fas fa-exclamation-triangle"></i> Simulate Error
+            </button>
+        </div>
+    </div>
+    <script src="fetch-data.js"></script>
+</body>
+</html>
+
